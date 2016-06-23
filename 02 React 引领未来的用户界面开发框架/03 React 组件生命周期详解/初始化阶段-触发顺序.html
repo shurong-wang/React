@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello, World</title>
+</head>
+<body>
+	<script src="./react-0.13.2/react-0.13.2/build/react.js"></script>
+    <script src="./react-0.13.2/react-0.13.2/build/JSXTransformer.js"></script>
+    <script type="text/jsx">
+    	var style = {
+    		color: "red",
+    		border: "1px #000 solid",
+    	};
+    	var HelloWorld = React.createClass({
+            getDefaultProps: function () {
+                console.log("getDefaultProps, 1")
+            },
+            getInitialState: function () {
+                console.log("getInitialState, 2");
+                return null;
+            },
+            componentWillMount: function () {
+                console.log("componentWillMount, 3")
+            },
+    		render: function () {
+                console.log("render, 4")
+    			return <p ref="childp">Hello, {(function (obj) {
+    				if (obj.props.name)
+    					return obj.props.name
+    				else
+    					return "World"
+    			})(this)}</p>
+    		},
+            componentDidMount: function () {
+                console.log("componentDidMount, 5")
+            },
+    	});
+    	React.render(<div style={style}><HelloWorld></HelloWorld></div>, document.body);
+    </script>
+</body>
+</html>

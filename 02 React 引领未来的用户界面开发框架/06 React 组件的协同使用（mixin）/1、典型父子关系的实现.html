@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>父子关系</title>
+</head>
+<body>
+    <script src="./react-0.13.2/react-0.13.2/build/react.js"></script>
+    <script src="./react-0.13.2/react-0.13.2/build/JSXTransformer.js"></script>
+    <script type="text/jsx">
+        var GenderSelect = React.createClass({
+            render: function() {
+                return <select onChange={this.props.handleSelect}>
+                <option value="0">男</option>
+                <option value="1">女</option>
+                </select>
+            }
+        })
+        var SignupForm = React.createClass({
+            getInitialState: function() {
+                return {
+                    name: '',
+                    password: '',
+                    gender: '',
+                }
+            },
+            handleChange: function(name, event) {
+                var newState = {}
+                newState[name] = event.target.value
+                this.setState(newState)
+            },
+            handleSelect: function(event) {
+                this.setState({gender: event.target.value})
+            },
+            render: function() {
+                console.log(this.state)
+                return <form>
+                <input type="text" placeholder="请输入用户名" onChange={this.handleChange.bind(this, 'name')} />
+                <input type="password" placeholder="请输入密码" onChange={this.handleChange.bind(this, 'password')} />
+                <GenderSelect handleSelect={this.handleSelect}></GenderSelect>
+                </form>
+            }
+        })
+        React.render(<SignupForm></SignupForm>, document.body);
+    </script>
+</body>
+</html>
