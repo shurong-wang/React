@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <script src="../build/react.js"></script>
+  <script src="../build/react-dom.js"></script>
+  <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<script type="text/babel">
+
+  //var data = 618;
+  var data = '618';
+
+  var MyTitle = React.createClass({
+    getDefaultProps: function () {
+      return {
+        title: 'Hello World'
+      };
+    },
+
+    propTypes: {
+      title: React.PropTypes.string.isRequired,
+    },
+
+    render: function () {
+      return <h1> {this.props.title} </h1>;
+    }
+  });
+
+  ReactDOM.render(
+      <MyTitle title={data}/>,
+      document.body
+  );
+</script>
+</body>
+</html>
+
