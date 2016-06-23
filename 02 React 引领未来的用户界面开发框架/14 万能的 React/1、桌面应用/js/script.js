@@ -1,4 +1,4 @@
-// Mixing jQuery and Node.js code in the same file? Yes please!
+﻿// Mixing jQuery and Node.js code in the same file? Yes please!
 $(function(){
 
 	// Node webkit's native UI library. We will need it for later
@@ -15,7 +15,7 @@ $(function(){
 
 		li.find('a')
 			.attr('href', "http://lorempixel.com/400/200/")
-			.text("测试图片");
+			.text("娴嬭瘯鍥剧墖");
 
 		li.find('img').attr('src', "http://lorempixel.com/400/200/");
 

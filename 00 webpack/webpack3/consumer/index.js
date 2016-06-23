@@ -1,1 +1,1 @@
-document.getElementById('content').innerText = 'This is Consumer page';
+﻿document.getElementById('content').innerText = 'This is Consumer page';

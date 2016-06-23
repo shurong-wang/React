@@ -1,4 +1,4 @@
-/**
+﻿/**
  * jQuery Mobile React Example
  *
  * Main application script.

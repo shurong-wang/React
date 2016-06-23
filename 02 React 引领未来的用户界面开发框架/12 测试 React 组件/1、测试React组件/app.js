@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+﻿(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -21891,9 +21891,9 @@ var CheckboxWithLabel = require("./CheckboxWithLabel.jsx");
 
 describe("test CheckboxWithLabel component", function () {
 	it("check label text", function () {
-		var checkbox = TestUtils.renderIntoDocument(React.createElement(CheckboxWithLabel, {text: "你是否爱吃橘子", on: "爱吃", off: "不爱吃"}));
+		var checkbox = TestUtils.renderIntoDocument(React.createElement(CheckboxWithLabel, {text: "浣犳槸鍚︾埍鍚冩瀛?, on: "鐖卞悆", off: "涓嶇埍鍚?}));
 		var text = React.findDOMNode(checkbox).textContent;
-		expect(text).toContain("你是否爱吃橘子");
+		expect(text).toContain("浣犳槸鍚︾埍鍚冩瀛?);
 	})
 })
 

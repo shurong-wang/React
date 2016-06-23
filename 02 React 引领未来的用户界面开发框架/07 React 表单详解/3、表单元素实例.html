@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <title>表单详解</title>
+    <title>琛ㄥ崟璇﹁В</title>
 </head>
 <body>
     <script src="./react-0.13.2/react-0.13.2/build/react-with-addons.js"></script>
@@ -37,17 +37,17 @@
             },
             render: function () {
                 return <form onSubmit={this.submitHandler}>
-                    <label htmlFor="username">请输入用户名:</label>
+                    <label htmlFor="username">璇疯緭鍏ョ敤鎴峰悕:</label>
                     <input id="username" type="text" value={this.state.username} onChange={this.handleUsernameChange} />
                     <br />
                     <select value={this.state.gender} onChange={this.handleGenderChange}> 
-                        <option value="man">男</option>
-                        <option value="woman">女</option>
+                        <option value="man">鐢?/option>
+                        <option value="woman">濂?/option>
                     </select>
                     <br />
-                    <label htmlFor="checkbox">同意用户协议</label>
+                    <label htmlFor="checkbox">鍚屾剰鐢ㄦ埛鍗忚</label>
                     <input id="checkbox" type="checkbox" value="agree" checked={this.state.checked} onChange={this.handleCheckboxChange} />
-                    <button type="submit">注册</button>
+                    <button type="submit">娉ㄥ唽</button>
                 </form>;
                 } 
             });

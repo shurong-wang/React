@@ -1,4 +1,4 @@
-var ExampleApplication = React.createClass({displayName: "ExampleApplication",
+﻿var ExampleApplication = React.createClass({displayName: "ExampleApplication",
   render: function() {
     var elapsed = Math.round(this.props.elapsed  / 100);
     var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );

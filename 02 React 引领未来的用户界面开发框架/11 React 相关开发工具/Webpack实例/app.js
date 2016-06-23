@@ -1,4 +1,4 @@
-webpackJsonp([0],{
+﻿webpackJsonp([0],{
 
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
@@ -25,23 +25,23 @@ webpackJsonp([0],{
 	            items: [
 	                {
 	                    id: 0,
-	                    text: "你喜欢吃萝卜吗？",
-	                    on: "喜欢",
-	                    off: "不喜欢",
+	                    text: "浣犲枩娆㈠悆钀濆崪鍚楋紵",
+	                    on: "鍠滄",
+	                    off: "涓嶅枩娆?,
 	                    checked: false
 	                }, 
 	                {
 	                    id: 1,
-	                    text: "你喜欢吃西瓜吗？",
-	                    on: "喜欢",
-	                    off: "不喜欢",
+	                    text: "浣犲枩娆㈠悆瑗跨摐鍚楋紵",
+	                    on: "鍠滄",
+	                    off: "涓嶅枩娆?,
 	                    checked: false
 	                }, 
 	                {
 	                    id: 2,
-	                    text: "你喜欢吃香蕉吗？",
-	                    on: "喜欢",
-	                    off: "不喜欢",
+	                    text: "浣犲枩娆㈠悆棣欒晧鍚楋紵",
+	                    on: "鍠滄",
+	                    off: "涓嶅枩娆?,
 	                    checked: false
 	                } 
 	            ]

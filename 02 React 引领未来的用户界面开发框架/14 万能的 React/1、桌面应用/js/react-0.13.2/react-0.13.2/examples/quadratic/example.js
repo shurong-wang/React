@@ -1,4 +1,4 @@
-var QuadraticCalculator = React.createClass({
+﻿var QuadraticCalculator = React.createClass({
   getInitialState: function() {
     return {
       a: 1,

@@ -1,4 +1,4 @@
-$(function() {
+﻿$(function() {
 	var os = require('os');
 	var prettyBytes = require('pretty-bytes');
 	var Stats = React.createClass({displayName: "Stats",

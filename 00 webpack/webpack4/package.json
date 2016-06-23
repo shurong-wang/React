@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --hot --inline -d",
-    "build": "webpack --progress --colors --minify"
+    "start": "NODE_ENV=dev webpack-dev-server --progress --colors --hot --inline -d",
+    "build": "NODE_ENV=production webpack --progress --colors --minify"
   },
   "license": "ISC",
   "dependencies": {

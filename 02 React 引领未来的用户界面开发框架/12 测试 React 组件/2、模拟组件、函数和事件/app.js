@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+﻿(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -115,13 +115,13 @@ var Survey = React.createClass({displayName: "Survey",
         return {
             status: [false, false],
             items: [{
-                text: "你喜欢吃苹果吗",
-                on: "喜欢",
-                off: "不喜欢"
+                text: "浣犲枩娆㈠悆鑻规灉鍚?,
+                on: "鍠滄",
+                off: "涓嶅枩娆?
             }, {
-                text: "你喜欢吃香蕉吗",
-                on: "喜欢",
-                off: "不喜欢"
+                text: "浣犲枩娆㈠悆棣欒晧鍚?,
+                on: "鍠滄",
+                off: "涓嶅枩娆?
             }
             ]
         }
@@ -22073,7 +22073,7 @@ describe("test Survey component", function () {
 		var target = TestUtils.scryRenderedDOMComponentsWithTag(survey, "input");
 		TestUtils.Simulate.change(target[0]);
 		TestUtils.Simulate.change(target[1]);
-		expect(React.findDOMNode(survey).textContent).toContain("不");
+		expect(React.findDOMNode(survey).textContent).toContain("涓?);
 	})
 })
 

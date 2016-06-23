@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+﻿(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -149,24 +149,24 @@ var blocks = [
 		text: "I love America",
 		links: [{
 			url: "http://www.baidu.com",
-			name: "按钮1"
+			name: "鎸夐挳1"
 		}, {
 			url: "http://www.jikexueyuan.com",
-			name: "按钮2"
+			name: "鎸夐挳2"
 		}
 		]
 	}
 ];
-var header = "总统";
-var footer = "由xxx统计";
-var listGroup = ["我是第一届黑人总统", "我喜欢极客学院"];
+var header = "鎬荤粺";
+var footer = "鐢眡xx缁熻";
+var listGroup = ["鎴戞槸绗竴灞婇粦浜烘€荤粺", "鎴戝枩娆㈡瀬瀹㈠闄?];
 var imgTop = {
 	url: "http://b.hiphotos.baidu.com/baike/w%3D268/sign=b03bbc37632762d0803ea3b998ed0849/1b4c510fd9f9d72a798e1309d42a2834349bbb3f.jpg",
-	alt: "奥巴马头像"
+	alt: "濂ュ反椹ご鍍?
 };
 var imgBottom = {
 	url: "http://b.hiphotos.baidu.com/baike/w%3D268/sign=b03bbc37632762d0803ea3b998ed0849/1b4c510fd9f9d72a798e1309d42a2834349bbb3f.jpg",
-	alt: "奥巴马头像2"
+	alt: "濂ュ反椹ご鍍?"
 };		
 var content = {
 	blocks: blocks,

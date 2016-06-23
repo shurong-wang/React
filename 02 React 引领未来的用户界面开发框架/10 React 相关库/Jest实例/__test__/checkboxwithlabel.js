@@ -1,4 +1,4 @@
-var jest = require('jest');
+﻿var jest = require('jest');
 
 jest.dontMock('../CheckboxWithLabel.js');
 describe('CheckboxWithLabel', function() {

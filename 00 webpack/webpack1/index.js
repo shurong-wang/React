@@ -1,3 +1,3 @@
-require('./index.css');
+﻿require('./index.css');
 
 document.write('Hello World!!!!!');
