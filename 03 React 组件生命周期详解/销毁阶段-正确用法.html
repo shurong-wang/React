@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello, World</title>
+</head>
+<body>
+	<script src="../build/react.js"></script>
+    <script src="../build/JSXTransformer.js"></script>
+    <script type="text/jsx">
+        var style = {
+            color: "red",
+            border: "1px #000 solid",
+        };
+        var HelloWorld = React.createClass({
+            render: function () { 
+                console.log("render 4");
+                return <p>Hello, {this.props.name ? this.props.name : "World"}</p>;
+            },
+            componentWillUnmount: function() {
+                console.log("BOOOOOOOOOOOOOOOOOM!");
+            },
+        });
+        var HelloUniverse = React.createClass({
+            getInitialState: function () {
+                return {name: ''};
+            },
+            handleChange: function (event) {                
+                if (event.target.value == "123") {
+                    React.unmountComponentAtNode(document.getElementsByTagName("body")[0]);
+                    return;
+                }
+                this.setState({name: event.target.value});
+            },
+            render: function () {
+                return <div>
+                <HelloWorld name={this.state.name}></HelloWorld>
+                <br/>
+                <input type="text" onChange={this.handleChange} />
+                </div>
+            },
+        });
+        React.render(<div style={style}><HelloUniverse></HelloUniverse></div>, document.body);
+    </script>
+</body>
+</html>
