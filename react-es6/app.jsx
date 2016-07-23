@@ -37,11 +37,9 @@ class CommentForm extends React.Component {
   }
 }
 
-
-
 class CommentList extends React.Component {
   render() {
-    var commentsNode = this.props.comments.map(function(comment, index) {
+    var commentsNode = this.props.comments.map(function (comment, index) {
       return <Comment key={'comment-' + index} author={comment.author}>{comment.body}</Comment>
     });
     return (
@@ -51,7 +49,6 @@ class CommentList extends React.Component {
     );
   }
 }
-
 
 class CommentBox extends React.Component {
 
@@ -114,7 +111,7 @@ class CommentBox extends React.Component {
   }
 }
 
-box = React.render(
+React.render(
   <CommentBox url="comments.json"/>,
   document.getElementById('content')
 );
